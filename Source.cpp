@@ -4,7 +4,7 @@
 
 FILE *arquivo;
 
-#define MAX 2000000
+#define MAX 2000000  //mudar isso
 
 enum ARQUIVOS {
 	SAIR,
