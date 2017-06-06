@@ -33,7 +33,7 @@ void heapSort(int *vet, int n);
 int t0;
 int trocas = 0;
 int comparacoes = 0;
-int *vet = (int *)malloc(MAX * sizeof(int));
+int *vet = new int[MAX];
 
 void main() {
 
