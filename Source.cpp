@@ -261,7 +261,7 @@ void merge(int vet[], int vecSize) {
 	int i, j, k;
 	int* tmp;
 
-	tmp = (int*)malloc(vecSize * sizeof(int));
+	tmp = new int[vecSize];
 	if (tmp == NULL) {
 		exit(1);
 	}
