@@ -4,7 +4,7 @@
 
 FILE *arquivo;
 
-#define MAX 2000000  //mudar isso
+#define MAX 2000000
 
 enum ARQUIVOS {
 	SAIR,
@@ -22,7 +22,6 @@ void abrirArquivo(char tipo[3]);
 void menuArquivos();
 void menuEscolha();
 void ordena(int op, int tamanho);
-void bubbleSort(int vetor[], int tamanho);
 void quickSort(int *vet, int inicio, int fim);
 void mergeSort(int vetor[], int tamanho);
 void refazHeap(int Esq, int Dir, int *vet);
@@ -217,22 +216,6 @@ void ordena(int op, int tamanho) {
 	}
 
 
-}
-
-void bubbleSort(int vet[], int tamanho) {
-	int aux;
-
-	for (int i = tamanho - 1; i >= 1; i--) {
-		for (int j = 0; j < i; j++) {
-			comparacoes++;
-			if (vet[j]>vet[j + 1]) {
-				aux = vet[j];
-				vet[j] = vet[j + 1];
-				vet[j + 1] = aux;
-				trocas++;
-			}
-		}
-	}
 }
 
 void quickSort(int vet[], int esquerda, int direita)
